@@ -1,0 +1,48 @@
+2024-09-24 19:40:14,658 - sales_prediction_logger - INFO - This is an INFO message.
+2024-09-24 19:40:14,659 - sales_prediction_logger - DEBUG - This is a DEBUG message.
+2024-09-24 19:40:14,660 - sales_prediction_logger - WARNING - This is a WARNING message.
+2024-09-24 19:40:14,660 - sales_prediction_logger - ERROR - This is an ERROR message.
+2024-09-24 19:40:14,661 - sales_prediction_logger - CRITICAL - This is a CRITICAL message.
+2024-09-24 19:41:56,503 - sales_prediction_logger - INFO - This is an INFO message.
+2024-09-24 19:41:56,504 - sales_prediction_logger - DEBUG - This is a DEBUG message.
+2024-09-24 19:41:56,504 - sales_prediction_logger - WARNING - This is a WARNING message.
+2024-09-24 19:41:56,505 - sales_prediction_logger - ERROR - This is an ERROR message.
+2024-09-24 19:41:56,505 - sales_prediction_logger - CRITICAL - This is a CRITICAL message.
+2024-10-22 02:46:11,550 - sales_prediction_logger - INFO - This is an INFO message.
+2024-10-22 02:46:11,556 - sales_prediction_logger - DEBUG - This is a DEBUG message.
+2024-10-22 02:46:11,556 - sales_prediction_logger - WARNING - This is a WARNING message.
+2024-10-22 02:46:11,559 - sales_prediction_logger - ERROR - This is an ERROR message.
+2024-10-22 02:46:11,561 - sales_prediction_logger - CRITICAL - This is a CRITICAL message.
+2024-10-22 02:54:14,818 - sales_prediction_logger - INFO - Starting data processing.
+2024-10-22 02:54:14,821 - sales_prediction_logger - ERROR - An error occurred: division by zero
+2024-10-22 02:54:14,824 - sales_prediction_logger - INFO - Data processing completed.
+2024-10-24 01:26:09,594 - sales_prediction_logger - INFO - This is an INFO message.
+2024-10-24 01:26:09,599 - sales_prediction_logger - DEBUG - This is a DEBUG message.
+2024-10-24 01:26:09,599 - sales_prediction_logger - WARNING - This is a WARNING message.
+2024-10-24 01:26:09,599 - sales_prediction_logger - ERROR - This is an ERROR message.
+2024-10-24 01:26:09,599 - sales_prediction_logger - CRITICAL - This is a CRITICAL message.
+2024-10-24 01:26:10,534 - sales_prediction_logger - INFO - Starting data processing.
+2024-10-24 01:26:10,536 - sales_prediction_logger - ERROR - An error occurred: division by zero
+2024-10-24 01:26:10,557 - sales_prediction_logger - INFO - Data processing completed.
+2024-10-24 01:26:11,927 - sales_prediction_logger - INFO - Starting data processing.
+2024-10-24 01:26:11,927 - sales_prediction_logger - DEBUG - Data: [1, 2, 3]
+2024-10-29 23:26:59,440 - sales_prediction_logger - INFO - This is an INFO message.
+2024-10-29 23:26:59,443 - sales_prediction_logger - DEBUG - This is a DEBUG message.
+2024-10-29 23:26:59,443 - sales_prediction_logger - WARNING - This is a WARNING message.
+2024-10-29 23:26:59,445 - sales_prediction_logger - ERROR - This is an ERROR message.
+2024-10-29 23:26:59,447 - sales_prediction_logger - CRITICAL - This is a CRITICAL message.
+2024-10-29 23:27:01,125 - sales_prediction_logger - INFO - Starting data processing.
+2024-10-29 23:27:01,127 - sales_prediction_logger - ERROR - An error occurred: division by zero
+2024-10-29 23:27:01,130 - sales_prediction_logger - INFO - Data processing completed.
+2024-10-29 23:27:02,655 - sales_prediction_logger - INFO - Starting data processing.
+2024-10-29 23:27:02,657 - sales_prediction_logger - DEBUG - Data: [1, 2, 3]
+2024-11-03 11:21:24,445 - sales_prediction_logger - INFO - This is an INFO message.
+2024-11-03 11:21:24,447 - sales_prediction_logger - DEBUG - This is a DEBUG message.
+2024-11-03 11:21:24,448 - sales_prediction_logger - WARNING - This is a WARNING message.
+2024-11-03 11:21:24,449 - sales_prediction_logger - ERROR - This is an ERROR message.
+2024-11-03 11:21:24,451 - sales_prediction_logger - CRITICAL - This is a CRITICAL message.
+2024-11-03 11:21:25,812 - sales_prediction_logger - INFO - Starting data processing.
+2024-11-03 11:21:25,815 - sales_prediction_logger - ERROR - An error occurred: division by zero
+2024-11-03 11:21:25,818 - sales_prediction_logger - INFO - Data processing completed.
+2024-11-03 11:21:29,741 - sales_prediction_logger - INFO - Starting data processing.
+2024-11-03 11:21:29,745 - sales_prediction_logger - DEBUG - Data: [1, 2, 3]
