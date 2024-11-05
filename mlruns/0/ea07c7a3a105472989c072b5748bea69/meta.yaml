@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ea07c7a3a105472989c072b5748bea69/artifacts
+end_time: 1730750062870
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ea07c7a3a105472989c072b5748bea69
+run_name: gentle-sow-516
+run_uuid: ea07c7a3a105472989c072b5748bea69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730750062759
+status: 4
+tags: []
+user_id: Lenovo
