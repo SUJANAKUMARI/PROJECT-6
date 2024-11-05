@@ -1,0 +1,3 @@
+2024-10-22 02:59:12,321 - my_logger - INFO - Logger setup complete.
+2024-10-22 02:59:41,520 - my_logger - INFO - Starting data processing.
+2024-10-22 02:59:41,522 - my_logger - DEBUG - Data: [1, 2, 3]
