@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/fe1df30b-3085-4539-a881-48579f5da816)![image](https://github.com/user-attachments/assets/8616e85c-bdf7-4151-8f9f-838d3bd03734)##PROJECT ON PHARMACEUTICAL SALES PREDICTION ACROSS MULTIPLE STORES
+![image](https://github.com/user-attachments/assets/95e55bde-2ed3-431f-b848-5325a908d591)![image](https://github.com/user-attachments/assets/fe1df30b-3085-4539-a881-48579f5da816)![image](https://github.com/user-attachments/assets/8616e85c-bdf7-4151-8f9f-838d3bd03734)##PROJECT ON PHARMACEUTICAL SALES PREDICTION ACROSS MULTIPLE STORES
 
 ![image](https://github.com/user-attachments/assets/4a419f37-37c2-4193-b5e8-8cf8c4fda6af)
 
@@ -120,7 +120,116 @@ Can promotions be deployed in more effective ways?**
 
 In summary, promotions are most effective in store types 'a', 'c', and 'd', and these should be the primary focus for future promotional activities. Store type 'b' should either be given a tailored approach or deprioritized based on the current data."
 
-● # Trends of customer behavior during store open and closing times![image](https://github.com/user-attachments/assets/da105a13-b1b7-45df-a3bb-56703fdc1eec)
+● # Trends of customer behavior during store open and closing times
+
+![image](https://github.com/user-attachments/assets/d2aab13c-9786-4646-bd95-ce116282bf3b)
+
+**Key Insights:**
+
+Clear Correlation: There is a direct correlation between store opening times and both sales and customer activity. When the store is open, both sales and customer counts are significantly higher.
+
+
+2. No Activity During Closure: As expected, there are no sales or customer activity when the store is closed.
+
+## Find Stores Open on All Weekdays:
+
+![image](https://github.com/user-attachments/assets/fbf4699e-f2db-4ca6-95a8-431da343947d)
+
+![image](https://github.com/user-attachments/assets/8a02905a-d947-4541-bd37-3bd24ffb03c7)
+
+![image](https://github.com/user-attachments/assets/ba05b4ab-f797-4955-8bd1-6ba51fd77678)
+
+**Interpretation:**
+
+ The analysis reveals a significant difference in average weekend sales between two groups of stores:
+**1. Stores Open All Weekdays:**   
+These stores have an average weekend sales figure of approximately $7359. This suggests that consistent weekday operations contribute to higher customer familiarity and loyalty, which may translate into better sales on weekends.
+2.  Stores Not Open All Weekdays:**
+In contrast, stores that do not operate all weekdays have an average weekend sales figure of about $2,811. This lower sales average could indicate that limited operational days lead to reduced customer engagement or lower brand visibility, resulting in fewer sales during weekends.
+Overall, the data suggests that stores with regular hours throughout the week likely cultivate a stronger customer base, which positively affects their weekend performance.
+
+# Check how the assortment type affects sales
+![image](https://github.com/user-attachments/assets/031bae23-b0f2-4b1d-909c-907df9e5311f)
+
+![image](https://github.com/user-attachments/assets/1d6dd2b2-7707-44b0-8810-57a5c8c36562)
+
+**Interpretation:**
+    
+**Assortment Type ‘a’ Basic:** This type has average sales of approximately.
+
+**Assortment Type ‘b’ Extra:** This type shows the lowest average sales.
+    
+**Assortment Type ‘c’ Extended:** This type has the highest sales.
+
+From this we can see that assortment type ‘c’  that is the Extended type is the most successful in terms of average sales, while type ‘b’ that is extra type  has the least average sales.
+
+# How does the distance to the next competitor affect sales? What if the store and its competitors all happen to be in city centres, does the distance matter in that case?
+
+![image](https://github.com/user-attachments/assets/36a01312-c2ff-4b03-9cdc-c2f0deaaa85a)
+
+**Overall Correlation:**
+    
+The overall correlation between sales and competition distance is very weak (0.01), indicating that distance to the next competitor has little to no effect on sales in general.
+    
+**City Centre Scenario:**
+
+If all stores and their competitors are located in city centers, where distances are generally shorter due to higher density, the weak correlation suggests that distance may not be an important factor. In such cases, other factors like foot traffic, store visibility, and local demand might have a more significant influence on sales.
+
+# LOGGING
+
+CREATED A LOGGER FILE CALLED sales_logger.py and the logs are saved in the file named sales_prediction_log
+
+![image](https://github.com/user-attachments/assets/ad4b28d4-008b-43c7-92ce-65f774cd40e3)
+
+![image](https://github.com/user-attachments/assets/ce3fe26c-425b-4b41-8759-6179298fc968)
+
+# TASK 2 -- PREDICTION OF STORE SALES
+
+Prediction of sales is the central task in this challenge. you want to predict daily sales in various stores up to 6 weeks ahead of time. This will help the company plan ahead of time.
+
+THE FUTURE PREDICTION OF SALES IS DONE AND THIS IS SAVED AS THE FILE NAMED “future_predictions_all_stores.csv”
+
+The steps involved in the prediction of store sales include 
+1. PREPROCESSING
+It is important to process the data into a format where it can be fed to a machine learning model. This typically means converting all non-numeric columns to numeric, handling NaN values and generating new features from already existing features.
+In our case, you have a few datetime columns to preprocess. you can extract the
+following from them: - weekdays, - weekends, - number of days to holidays
+- Number of days after holiday
+- Beginning of month, mid month and ending of month
+- (think of more features to extract), extra marks for it
+As a final thing, you have to scale the data. This helps with predictions especially when
+using machine learning algorithms that use Euclidean distances. you can use the
+standard scaler in sklearn for this.
+ALL THESE PREPROCESSING WAS DONE AND CREATED A DATAFRAME CALLED “df_train”
+
+2. OUTLIERS REMOVAL:  Outliers were removed and the dataframe named “df_filtered” was created.
+
+3. BUILDING MODELS WITH SKLEARN PIPELINES – This was done successfully. Below is the output
+
+   ![image](https://github.com/user-attachments/assets/8f623095-54d9-48c9-b2af-839737d05efa)
+
+4. CREATE A PIPELINE FOR IMPUTING, SCALING AND MODEL FITTING AND ALSO ACCURACY
+
+   ![image](https://github.com/user-attachments/assets/1e0bb3ff-3383-48b4-a684-3d37d312109b)
+
+5.  SERIALIZING THE MODELS
+
+![image](https://github.com/user-attachments/assets/415337e6-c1f3-44a1-97ba-5b14fd8ef906)
+
+6. IDENTIFYING THE FEATURE IMPORTANCES
+
+![image](https://github.com/user-attachments/assets/2cfea06f-ef18-4667-a48d-c4f8c5069cb6)
+
+![image](https://github.com/user-attachments/assets/b973e8b6-a211-4781-a581-a3f633777d28)
+
+
+
+
+
+
+
+
+
 
 
 
