@@ -222,9 +222,94 @@ ALL THESE PREPROCESSING WAS DONE AND CREATED A DATAFRAME CALLED “df_train”
 
 ![image](https://github.com/user-attachments/assets/b973e8b6-a211-4781-a581-a3f633777d28)
 
+# TASK 3 – BUILDING MODEL WITH DEEP LEARNING
+
+# Step 1: Isolate the Rossmann Store Sales Dataset into Time Series Data
+
+# Step 2: Check Whether Your Time Series Data is Stationary
+
+ADF Statistic: -56.62430881041457 p-value: 0.0
+
+INTERPRETATION:
+1. ADF Statistic:  As the ADF Statistic is negative, the more negative the ADF Statistic, the stronger the evidence against the null hypothesis.
+2. p-Value:  The p-value is 0.0 which is less than 0.05 indicates the strong evidence against the null hypothesis which means we can reject the null hypothesis
+
+This means that the TIME SERIES DATA IS STATIONARY
+
+Step 3:  Depending on your conclusion from 2 above difference the time series data
+
+There is no need of differencing the time series data as the time series data is already stationary.
+
+Step 4:  Check for autocorrelation and partial autocorrelation of your data
+
+High autocorrelation at all lags: The ACF values are close to 1 across all lags and this indicates that the rolling average sales data is hightly autocorrelated.
+Shaded confidence interval:  All the autocorrelation points fall outside the region(blue shade), this indicates that the autocorrelations are significant for all lags and hence the sales data is not random but follows a structured pattern.
+
+![image](https://github.com/user-attachments/assets/f5f42370-22b0-4687-974d-518f05505d44)
+
+Significant lag at 1:  The first lag shows a PACF value of nearly 1 indicating a very strong direct relationship between the current sales and the sales from one lag prior. This gives us a picture that the sales from the immediately preceding period have a very strong influence on current period.
+Significant drop after lag 1:  After lag 1 there is a drop in PACF value.  This pattern suggests that the effect of sales data beyone one lag diminishes significantly after controlling for the effect of the first lag.  this shows a typical behavior of autoregressive of order 1 where the current value is primarily dependent on the immediately preceding value.
+Other Significant lags: There are notable lags at 10,15,and 25 but they are much smaller in comparison.  These lags show some influence but are much weaker.
+Non-significant lags:  Most other lags fall within the confidence interval, indicating that the PACF at these lags are not statistically significant.
+
+![image](https://github.com/user-attachments/assets/c803a443-ac50-477c-a03f-f2003a979056)
+
+Step 5:  Transform the time series data into supervised learning data by creating a new  y(target) column. For example as illustrated here in the Sliding Window For Time  Series Data section
+
+![image](https://github.com/user-attachments/assets/4cf3ecfe-24f2-4e1b-ad39-4b6736c0dadd)
+
+Step 6:   Scale your data in the (-1, 1) range
+
+![image](https://github.com/user-attachments/assets/86457604-b57e-4e74-8557-625090593953)
+
+AFTER THE TRAINING THE LSTM MODEL THE ACTUAL VS PREDICTED AS AS BELOW
+
+![image](https://github.com/user-attachments/assets/9bee034d-f41b-410a-a4a1-0975798d14a8)
+
+CALCULATING THE METRICS
+
+![image](https://github.com/user-attachments/assets/d3a77eb7-89f8-4229-ad43-b83dcfda6e11)
+
+# FINAL OUTPUT
+
+When I run my app.py file in the terminal a web interface will be opened with the URL -- http://127.0.0.1:5000/
+
+The screen shot of the appearing web interface is as below and it is designed as required in the project document i.e., 
+The input fields in the frontend are for example
+● Store_id
+● Upload csv file with a columns name
+○ Date
+○ IsHoliday
+○ IsWeekend
+○ IsPromo
+○ Any other parameter which is dependent on the date
+
+Finally the dashboard should show a plot that shows the predicted sales amount and
+number of customers. It should also allow the user to download the prediction in the
+form of a csv table.
+
+![image](https://github.com/user-attachments/assets/7e2ad3ec-4553-4a08-b9b1-24eb2fa86709)
+
+When I run my app.py file in the terminal a web interface will be opened with the URL -- http://127.0.0.1:5000/
+Finally your dashboard should show a plot that shows the predicted sales amount and number of customers. It should also allow the user to download the prediction in the form of a csv table.
+When I enter the store id and when I upload the csv file containing the input features and press the predict button automatically a plot that shows predicted sales amount and predicted customers will be seen.  Below is the screen shot of the output (the csv file I uploaded is “selected_columns_wi”) and an option to download the predicted sales in the form csv is also made.
+
+![image](https://github.com/user-attachments/assets/f809548a-a456-4b9d-9cde-b5da88716200)
+
+![image](https://github.com/user-attachments/assets/3834b98c-9d0e-430e-8319-9b81feb978d6)
+
+THE FUTURE PREDICTION OF SALES IS DONE AND THIS IS SAVED AS THE FILE NAMED “future_predictions_all_stores.csv”
+
+THE WEBINTERFACE URL IS ---  URL -- http://127.0.0.1:5000/
+
+TO PREDICT ---  URL -- http://127.0.0.1:5000/predict
 
 
+# ACKNOWLEDGEMENT
 
+"I would like to express my sincere gratitude to my mentor Ms. Twinkle Baid for her valuable guidance, support, and expertise throughout my project on Pharmaceutical Sales forecasting, which helped me tackle complex challenges and refine my skills significantly."
+
+![image](https://github.com/user-attachments/assets/f65ad432-6926-403c-b22a-9ff0875372e3)
 
 
 
