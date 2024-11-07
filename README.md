@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/95e55bde-2ed3-431f-b848-5325a908d591)![image](https://github.com/user-attachments/assets/fe1df30b-3085-4539-a881-48579f5da816)![image](https://github.com/user-attachments/assets/8616e85c-bdf7-4151-8f9f-838d3bd03734)##PROJECT ON PHARMACEUTICAL SALES PREDICTION ACROSS MULTIPLE STORES
+## PROJECT ON PHARMACEUTICAL SALES PREDICTION ACROSS MULTIPLE STORES
 
 ![image](https://github.com/user-attachments/assets/4a419f37-37c2-4193-b5e8-8cf8c4fda6af)
 
