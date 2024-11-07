@@ -309,7 +309,7 @@ TO PREDICT ---  URL -- http://127.0.0.1:5000/predict
 
 "I would like to express my sincere gratitude to my mentor Ms. Twinkle Baid for her valuable guidance, support, and expertise throughout my project on Pharmaceutical Sales forecasting, which helped me tackle complex challenges and refine my skills significantly."
 
-![image](https://github.com/user-attachments/assets/f65ad432-6926-403c-b22a-9ff0875372e3)
+THANK YOU
 
 
 
